@@ -28,7 +28,7 @@ const getUserMessage = (ctx) => {
 bot.command("start", (ctx) => {
     
     ctx.replyWithMarkdown(`
-        *Wecome, Hope you are doing good 😀*\n\nType /help to see all the available commands
+        *Welcome, Hope you are doing good 😀*\n\nType /help to see all the available commands
     `);
 });
 
