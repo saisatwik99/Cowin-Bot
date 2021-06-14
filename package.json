@@ -1,0 +1,25 @@
+{
+  "name": "santbabot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Sai Satwik",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "got": "^9.6.0",
+    "india-pincode-lookup": "^1.0.3",
+    "mongodb": "^3.6.9",
+    "mongoose": "^5.12.13",
+    "node-cron": "^3.0.0",
+    "telegraf": "^4.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
