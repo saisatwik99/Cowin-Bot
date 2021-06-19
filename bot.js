@@ -149,12 +149,13 @@ sendMessageToEveryUser = async () => {
         if(result.status) {
             const allData = result.result;
             allData.forEach(async (user, index) => {
-                console.log(user);
+                
                 if(isMoreThan1Hour(user.lastNotified))
                 {
-                    console.log(user);
+                    
                     setTimeout(async () => {
                         try {
+                            
                             const sendMessageData = await Slots.slots(user.pincode, user.age);
                             if(sendMessageData.status)
                             {
@@ -192,7 +193,8 @@ sendMessageToEveryUser = async () => {
     }
 }
 
-cron.schedule( `*/5 * * * *`, async () => {
+cron.schedule( `*/1 * * * *`, async () => {
+    console.log("1 min passed");
     await sendMessageToEveryUser();
 });
 

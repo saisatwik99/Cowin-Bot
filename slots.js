@@ -18,7 +18,7 @@ exports.slots = async(pincode, age) => {
     var markdown = '';
     const Age = parseInt(age);
     const allMessages = [];
-    const filterResults = result.sessions.filter(e => (e.available_capacity >= 0 && e.min_age_limit <= Age));
+    const filterResults = result.sessions.filter(e => (e.available_capacity > 0 && e.min_age_limit <= Age));
     if(filterResults.length > 0)
     {
         markdown += `<b>Hey, Vaccination Centers are available in your area.</b>`
