@@ -152,7 +152,7 @@ sendMessageToEveryUser = async () => {
                 
                 if(isMoreThan1Hour(user.lastNotified))
                 {
-                    
+                    console.log("Its more than hour you need to be notified");
                     setTimeout(async () => {
                         try {
                             
