@@ -26,9 +26,14 @@ const getUserMessage = (ctx) => {
 
 // [+] START COMMAND [+]
 bot.command("start", (ctx) => {
-    
     ctx.replyWithMarkdown(`
-        *Welcome, Hope you are doing good 😀*\n\nType /help to see all the available commands
+        👋 Good to see you 😊\n\n👉To Register with us to get Notified when vaccines are available\nType "/covid [age] [pincode]"\n\n👉To Unregister\nType "/delete [age] [pincode]"\n\n👉To register for vaccine visit https://www.cowin.gov.in/home
+        
+        <b>If you find any issues report at t.me/saisatwik99</b>
+        <b>Also open for suggesions. Help us to improve 🚀</b>
+    `, {parse_mode: 'HTML'});
+    ctx.replyWithMarkdown(`
+        Type /help to see all the available commands
     `);
 });
 
@@ -119,7 +124,7 @@ bot.command("delete", async (ctx) => {
 bot.command("help", (ctx) => {
     
     ctx.replyWithMarkdown(`
-        👋 Good to see you 😊\n\n👉To Register with us to get Notified when vaccines are available\nType "/covid [age] [pincode]"\n\n👉To Unregister\nType "/delete [age] [pincode]"\n\n👉To register for vaccine visit https://www.cowin.gov.in/home
+        Learn more about our commands\n\n👉To Register with us to get Notified when vaccines are available\nType "/covid [age] [pincode]"\n\n👉To Unregister\nType "/delete [age] [pincode]"\n\n👉To register for vaccine visit https://www.cowin.gov.in/home
         
         <b>If you find any issues report at t.me/saisatwik99</b>
         <b>Also open for suggesions. Help us to improve 🚀</b>

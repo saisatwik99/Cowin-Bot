@@ -18,7 +18,7 @@ exports.addUser = async (uid, username, age, pincode) => {
 
             return ({
                 status: true,
-                msg: `We will notify you if a vaccination slot available in your PinCode (${pincode}).\nSTAY HOME STAY SAFE`
+                msg: `We will notify you if a vaccination slot available in your PinCode (${pincode}).\nSTAY HOME STAY SAFE😷`
             })
         } else {
             return ({
