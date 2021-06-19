@@ -159,7 +159,7 @@ sendMessageToEveryUser = async () => {
                             const sendMessageData = await Slots.slots(user.pincode, user.age);
                             if(sendMessageData.status)
                             {
-                                console.log("user");
+                                console.log("Its time for notification");
                                 const n = sendMessageData.slotsAvail.length;
                                 for(var i = 0; i < n; i++) {
                                     await bot.telegram.sendMessage(user.uid, sendMessageData.slotsAvail[i], { parse_mode: 'HTML' });
@@ -194,8 +194,8 @@ sendMessageToEveryUser = async () => {
     }
 }
 
-cron.schedule( `*/5 * * * *`, async () => {
-    console.log("5 min passed");
+cron.schedule( `*/1 * * * *`, async () => {
+    console.log("1 min passed");
     await sendMessageToEveryUser();
 });
 
