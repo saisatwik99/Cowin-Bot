@@ -178,7 +178,7 @@ sendMessageToEveryUser = async () => {
                         } catch(err){
                             console.log(err);
                         }
-                    }, 5000 * index)
+                    }, 1000 * index)
                 }
             });
         }    
@@ -187,7 +187,7 @@ sendMessageToEveryUser = async () => {
     }
 }
 
-cron.schedule( `* * * * *`, async () => {
+cron.schedule( `*/5 * * * *`, async () => {
     await sendMessageToEveryUser();
 });
 
