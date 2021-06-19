@@ -159,6 +159,7 @@ sendMessageToEveryUser = async () => {
                             const sendMessageData = await Slots.slots(user.pincode, user.age);
                             if(sendMessageData.status)
                             {
+                                console.log(user);
                                 const n = sendMessageData.slotsAvail.length;
                                 for(var i = 0; i < n; i++) {
                                     await bot.telegram.sendMessage(user.uid, sendMessageData.slotsAvail[i], { parse_mode: 'HTML' });
