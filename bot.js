@@ -157,6 +157,7 @@ sendMessageToEveryUser = async () => {
                         try {
                             
                             const sendMessageData = await Slots.slots(user.pincode, user.age);
+                            console.log(sendMessageData);
                             if(sendMessageData.status)
                             {
                                 console.log("Its time for notification");
