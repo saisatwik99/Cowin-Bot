@@ -10,6 +10,7 @@
   "author": "Sai Satwik",
   "license": "ISC",
   "dependencies": {
+    "cowin": "^1.0.4",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "got": "^9.6.0",
